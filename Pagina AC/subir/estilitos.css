@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/iiii.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 100vh;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    color: #cf2d3a;
+    font-size: 32px;
+    font-weight: 800;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header nav {
+    display: inline-block;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: #cf2d3a;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #cf2d3a;
+    margin-top: 40px;
+}
+
+form {
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    display: grid; /* Cambiado a grid para la disposición de campos */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre los campos */
+}
+
+label {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 10px;
+    background-color: #1f1f1f;
+    border: 1px solid #cf2d3a;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    width: 100%; /* Mantiene el campo al ancho completo */
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    background-color: #cf2d3a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px; /* Cambié el padding para hacer los botones más pequeños */
+    font-size: 14px; /* Cambié el tamaño de la fuente */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif; /* Aplica el estilo de letra */
+}
+
+/* Agrupación de botones */
+.button-container {
+    display: flex; /* Flex para alinear botones horizontalmente */
+    justify-content: space-between; /* Espacio entre botones */
+    grid-column: span 2; /* Hace que los botones ocupen toda la fila */
+}
+
+/* Estilo para el campo de subir archivos */
+input[type="file"] {
+    padding: 10px;
+    background-color: #1f1f1f;
+    border: 1px solid #cf2d3a;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    width: 100%; /* Mantén el ancho completo */
+}
+
+/* Estilo para la lista de archivos */
+.file-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #ffffff;
+    max-height: 150px;
+    overflow-y: auto;
+    grid-column: span 2; /* Ocupará toda la fila, igual que los botones */
+    border: 1px solid #cf2d3a; /* Borde de la vista previa */
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+/* Estilo general de los botones */
+input[type="reset"], input[type="submit"] {
+    background-color: #cf2d3a; /* Fondo rojo */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+input[type="reset"]:hover, input[type="submit"]:hover {
+    background-color: #a12024; /* Color al pasar el mouse */
+}
+/* Estilo para el campo de observación */
+textarea {
+    font-family: 'Poppins', sans-serif; /* Estilo de letra Poppins */
+    padding: 10px; /* Espaciado interno */
+    background-color: #1f1f1f; /* Color de fondo */
+    border: 1px solid #cf2d3a; /* Borde del textarea */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #ffffff; /* Color del texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    resize: vertical; /* Permitir que el usuario cambie el tamaño verticalmente */
+    min-height: 100px; /* Altura mínima */
+}
+
+/* Ajuste del label para Observación */
+label[for="observacion"] {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #ffffff; /* Color del texto */
+}
+
