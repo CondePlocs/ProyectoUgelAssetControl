@@ -26,7 +26,5 @@ Este proyecto está diseñado para ejecutarse exclusivamente en **LOCALHOST**.
 
 ---
 
-¡Sigue estos pasos para comenzar a trabajar y disfruta del desarrollo! 😎
-
 
 
